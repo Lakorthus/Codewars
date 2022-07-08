@@ -10,11 +10,11 @@
 // I is misinterpreted as 1
 // The test cases contain numbers only by mistake.
 
-function correct(string){
-    const corrections = {
-    "5": "S",
-    "0": "O",
-    "1": "I",
+function correct(string) {
+  const corrections = {
+    5: "S",
+    0: "O",
+    1: "I",
   };
   return string.replace(/[501]/g, (char) => corrections[char]);
 }
